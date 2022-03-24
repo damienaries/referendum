@@ -9,9 +9,15 @@ module.exports = {
 
     theme: {
         extend: {
-            fontFamily: {
-                sans: ['Nunito', ...defaultTheme.fontFamily.sans],
+            colors: {
+                'gray-background': '#f7f8fc',
             },
+            fontFamily: {
+                sans: ['Open Sans', ...defaultTheme.fontFamily.sans],
+            },
+            maxWidth: {
+                'custom': '1100px',
+            }
         },
     },
 
