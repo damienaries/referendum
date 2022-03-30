@@ -17,6 +17,10 @@ module.exports = {
             },
             maxWidth: {
                 'custom': '1100px',
+            },
+            boxShadow: {
+                'small': '4px 4px 15px 0 rgba(36, 37, 38, 0.08)',
+                'large': '3px 4px 15px 0 rgba(36, 37, 38, 0.22)',
             }
         },
     },
