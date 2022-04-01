@@ -16,7 +16,7 @@ module.exports = {
                 sans: ['Open Sans', ...defaultTheme.fontFamily.sans],
             },
             maxWidth: {
-                'custom': '1100px',
+                'custom': '1200px',
             },
             boxShadow: {
                 'small': '4px 4px 15px 0 rgba(36, 37, 38, 0.08)',
