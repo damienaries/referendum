@@ -40,11 +40,13 @@
                     <button class="w-20 bg-gray-300 shadow-sm font-bold tracking-wide text-xs uppercase rounded-xl px-4 py-3 border border-gray-200 hover:border-gray-400 transition duration-200 ease-in">Vote</button>
                 </div>
             </div>
-            <div class="flex px-2 py-6">
-                <a href="#" class="flex-none">
-                    <img src="https://source.unsplash.com/200x200/?face&crop=face&v=1" alt="avatar" class="w-14 h-14 rounded-xl">
-                </a>
-                <div class="mx-4">
+            <div class="flex flex-1 px-2 py-6">
+                <div class="flex-none">
+                    <a href="#" class="flex-none">
+                        <img src="https://source.unsplash.com/200x200/?face&crop=face&v=1" alt="avatar" class="w-14 h-14 rounded-xl">
+                    </a>
+                </div>
+                <div class="mx-4 w-full">
                     <h4 class="text-xl font-semibold">
                         <a href="#" class="hover:underline">
                             Awesome debate title
@@ -96,11 +98,11 @@
                     <button class="w-20 bg-blue-600 shadow-sm text-white font-bold tracking-wide text-xs uppercase rounded-xl px-4 py-3 border border-blue-600 hover:border-blue-900 transition duration-200 ease-in">Voted</button>
                 </div>
             </div>
-            <div class="flex px-2 py-6">
+            <div class="flex flex-1 px-2 py-6">
                 <a href="#" class="flex-none">
                     <img src="https://source.unsplash.com/200x200/?face&crop=face&v=1" alt="avatar" class="w-14 h-14 rounded-xl">
                 </a>
-                <div class="mx-4">
+                <div class="mx-4 w-full">
                     <h4 class="text-xl font-semibold">
                         <a href="#" class="hover:underline">
                             Something else to vote on
@@ -152,11 +154,11 @@
                     <button class="w-20 bg-gray-300 shadow-sm font-bold tracking-wide text-xs uppercase rounded-xl px-4 py-3 border border-gray-200 hover:border-gray-400 transition duration-200 ease-in">Vote</button>
                 </div>
             </div>
-            <div class="flex px-2 py-6">
+            <div class="flex flex-1 px-2 py-6">
                 <a href="#" class="flex-none">
                     <img src="https://source.unsplash.com/200x200/?face&crop=face&v=1" alt="avatar" class="w-14 h-14 rounded-xl">
                 </a>
-                <div class="mx-4">
+                <div class="mx-4 w-full">
                     <h4 class="text-xl font-semibold">
                         <a href="#" class="hover:underline">
                             Let's talk about this too
