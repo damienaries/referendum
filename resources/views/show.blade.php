@@ -61,11 +61,11 @@
     <!-- buttons container -->
     <div class="buttons-container flex items-center justify-between mt-6">
         <div class="flex items-center justify-between space-x-4 ml-6">
-            <div class="relative">
-                <button type="button" class="flex items-center justify-center h-11 text-xs text-white bg-blue-600 font-semibold rounded-xl border border-blue-600 hover:border-blue-400 hover:shadow-lg transition duration-150 ease-in px-6 py-3">
+            <div x-data="{ isOpen: false }" class="relative">
+                <button @click="isOpen = !isOpen" type="button" class="flex items-center justify-center h-11 text-xs text-white bg-blue-600 font-semibold rounded-xl border border-blue-600 hover:border-blue-400 hover:shadow-lg transition duration-150 ease-in px-6 py-3">
                     Reply
                 </button>
-                <div class="absolute z-10 w-104 text-left font-semibold text-sm bg-white shadow-small rounded-xl mt-2">
+                <div x-show.transition.origin.top.left="isOpen" @click.away="isOpen = false" x-cloak class="absolute z-10 w-104 text-left font-semibold text-sm bg-white shadow-small rounded-xl mt-2">
                     <form action="#" class="space-y-4 px-4 py-6">
                         <textarea name="post_comment" id="post_comment" cols="30" rows="4" class="w-full text-sm bg-gray-100 rounded-xl placeholder-gray-900 border-0 px-4 py-2" placeholder="Go ahead, don't be shy and share your thoughts..."></textarea>
 
@@ -84,14 +84,14 @@
                     </form>
                 </div>
             </div>
-            <div class="relative">
-                <button type="button" class="flex items-center justify-center h-11 text-xs bg-gray-200 font-semibold rounded-xl border border-gray-200 hover:border-gray-400 transition duration-150 ease-in px-6 py-3 hover:shadow-lg">
+            <div x-data="{ isOpen: false }" class="relative">
+                <button @click="isOpen = !isOpen" type="button" class="flex items-center justify-center h-11 text-xs bg-gray-200 font-semibold rounded-xl border border-gray-200 hover:border-gray-400 transition duration-150 ease-in px-6 py-3 hover:shadow-lg">
                     <span class="mr-2">Set Status</span>
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
                     </svg>
                 </button>
-                <div class="absolute z-15 w-76 text-left font-semibold text-sm bg-white shadow-small rounded-xl mt-2">
+                <div x-show.transition.origin.top.left="isOpen" @click.away="isOpen = false" x-cloak class="absolute z-15 w-76 text-left font-semibold text-sm bg-white shadow-small rounded-xl mt-2">
                     <form action="#" class="space-y-4 px-4 py-6">
                         <div>
                             <div>

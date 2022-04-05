@@ -63,15 +63,15 @@
                             <div>&bull;</div>
                             <div class="text-gray-900">3 comments</div>
                         </div>
-                        <div class="flex items-center space-x-2">
+                        <div x-data="{ isOpen: false }" class="flex items-center space-x-2">
                             <div class="bg-gray-200 text-xs font-bold uppercase leading-none rounded-full text-center w-28 h-7 py-2 px-4 transition duration-200 ease-in">
                                 Open
                             </div>
-                            <button class="bg-gray-100 relative hover:bg-gray-200 rounded-full h-7 transition duration-200 ease-in py-2 px-3">
+                            <button @click="isOpen = !isOpen" class="bg-gray-100 relative hover:bg-gray-200 rounded-full h-7 transition duration-200 ease-in py-2 px-3">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 20 20">
                                     <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
                                 </svg>
-                                <ul class="absolute w-44 font-semibold bg-white shadow-large rounded-xl left-0">
+                                <ul x-show.transition.origin.top.left="isOpen" @click.away="isOpen = false" x-cloak class="absolute w-44 font-semibold bg-white shadow-large rounded-xl left-0">
                                     <li>
                                         <a href="#" class="hover:bg-gray-100 px-5 py-3 block transition duration-200 ease-in">Mark as Spam</a>
                                     </li>
