@@ -50,7 +50,7 @@
 
     <main class="container mx-auto flex w-full max-w-custom">
         <div class="w-1/3 mr-6">
-            <div class="border-2 border-blue-600 bg-white shadow-small hover:shadow-lg rounded-xl mt-16">
+            <div class="border border-blue-600 bg-white shadow-small hover:shadow-lg rounded-xl mt-16">
                 <div class="text-center px-6 pb-2 pt-6">
                     <h3 class="font-semibold text-base">Suggest a debate</h3>
                     <p class="text-xs mt-4">Let us know what you would like to vote on</p>

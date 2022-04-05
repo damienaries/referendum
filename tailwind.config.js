@@ -15,6 +15,10 @@ module.exports = {
             fontFamily: {
                 sans: ['Open Sans', ...defaultTheme.fontFamily.sans],
             },
+            spacing: {
+                76: '19rem',
+                104: '26rem',
+            },
             maxWidth: {
                 'custom': '1200px',
             },
