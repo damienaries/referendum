@@ -29,15 +29,17 @@
             <div class="mx-4 w-full flex flex-col justify-between">
                 <h4 class="text-xl font-semibold">
                     <a href="#" class="hover:underline">
-                        Awesome debate title
+                        {{ $idea->title }}
                     </a>
                 </h4>
                 <div class="text-gray-600 my-3 line-clamp-3 float-left md:float-none">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, iusto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, ducimus! Earum optio blanditiis qui vero placeat repellendus, nobis tempora praesentium in adipisci esse, ducimus beatae. Placeat est quaerat eos qui, tenetur fugit saepe possimus, eaque sunt, numquam fugiat ab error!
+                    {{ $idea->description }}
                 </div>
                 <div class="flex flex-col md:flex-row md:justify-between items-start md:items-center space-y-2 md:space-y-0 mt-3">
                     <div class="flex items-center text-xs text-gray-400 font-semibold space-x-2">
-                        <div>10 hours ago</div>
+                        <div class="hidden md:block font-bold text-gray-900">{{ $idea->user->name }}</div>
+                        <div class="hidden md:block">&bull;</div>
+                        <div>{{ $idea->created_at->diffForHumans() }}</div>
                         <div>&bull;</div>
                         <div>Category 1</div>
                         <div>&bull;</div>
