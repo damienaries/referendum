@@ -18,6 +18,7 @@ class ShowIdeasTest extends TestCase
         $categoryOne = Category::factory()->create(['name' => 'Category 1']);
         $categoryTwo = Category::factory()->create(['name' => 'Category 2']);
 
+
         $ideaOne = Idea::factory()->create([
             'title' => 'My first idea',
             'category_id' => $categoryOne->id,

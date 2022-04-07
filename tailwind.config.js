@@ -1,4 +1,6 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
+const colors = require('tailwindcss/colors');
+
 
 module.exports = {
     content: [
@@ -6,11 +8,24 @@ module.exports = {
         './storage/framework/views/*.php',
         './resources/views/**/*.blade.php',
     ],
+    safelist: [
+        'bg-purple-600',
+        'bg-red-600',
+        'bg-green-600',
+        'bg-yellow-600',
+        'bg-blue-600'
+    ],
 
     theme: {
         extend: {
             colors: {
                 'gray-background': '#f7f8fc',
+                purple: colors.purple,
+                yellow: colors.yellow,
+                red: colors.red,
+                green: colors.green,
+                blue: colors.blue,
+                gray: colors.gray
             },
             fontFamily: {
                 sans: ['Open Sans', ...defaultTheme.fontFamily.sans],

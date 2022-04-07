@@ -9,3 +9,21 @@
 .container {
     padding: 1rem 2rem;
 }
+
+@layer utilities {
+    .status-open {
+        @apply bg-gray-200;
+    }
+    .status-considering {
+        @apply bg-purple-600 text-white;
+    }
+    .status-in-progress {
+        @apply bg-yellow-600 text-white;
+    }
+    .status-implemented {
+        @apply bg-green-600 text-white;
+    }
+    .status-closed {
+        @apply bg-red-600 text-white;
+    }
+}

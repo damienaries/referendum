@@ -72,8 +72,8 @@
                             <div class="text-gray-900">3 comments</div>
                         </div>
                         <div x-data="{ isOpen: false }" class="flex items-center space-x-2">
-                            <div class="bg-gray-200 text-xs font-bold uppercase leading-none rounded-full text-center w-28 h-7 py-2 px-4 transition duration-200 ease-in">
-                                Open
+                            <div class="{{ $idea->getStatusClasses() }} text-xs font-bold uppercase leading-none rounded-full text-center w-28 h-7 py-2 px-4 transition duration-200 ease-in">
+                                {{ $idea->status->name }}
                             </div>
                             <button @click="isOpen = !isOpen" class="bg-gray-100 relative hover:bg-gray-200 rounded-full h-7 transition duration-200 ease-in py-2 px-3">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 20 20">
